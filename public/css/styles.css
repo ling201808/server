@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background:#1C1925;
+    /* background:#1C1925; */
+    color:rgb(255,255,255,0.75);
+    line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+    background-color:rgb(252, 136, 2);
+}
+body{
+    font-size:17px;
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+#content-img-one{
+    object-fit: cover;
+    height:230px;
+    width:100%;
+}
+
+#content-img-two {
+    object-fit: cover;
+    height:215px;
+    width:100%;
+}
+
+#mainNavbar {
+    background: #1C1925;
+}
+
+#mainNavbar .nav-link {
+    color: rgb(255,255,255,0.75);
+    font-family: "Roboto","Arial",sans-serif;
+    font-size:18px;
+    /* margin-left:1em; */
+}
+
+#mainNavbar .nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo-image{
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#mainNavbar .navbar-brand {
+    color: rgb(255,255,255,0.75);
+    font-size: 1.5rem;
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+}
+
+#mainNavbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar.scrolled {
+    background: #1C1925;
+    transition: background 450ms;
+}
+
+.button {
+    background-color:rgb(252, 136, 2);
+    border:1.9px solid #1C1925;
+    color:black;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    transition: 0.1s;
+    font-size:20px;
+}
+
+.button:hover {
+    background: rgb(252, 136, 2);
+    border:1.5px solid rgb(252, 136, 2);
+    color:rgb(255,255,255,0.75);
+}
+
+.subscribe {
+    background: rgb(252, 136, 2);
+    color:#262528;  
+}
+
+.subscribe textarea{
+    background: rgb(252, 136, 2);
+    color:#262528;  
+}
+
+.subscribe button{
+    background-color:rgb(252, 136, 2);
+    color:#262528; 
+    border: none;
+    outline-offset: 0px;
+    outline: none;
+    height:38px;
+    width:41.5px;
+    transition: background 300ms;
+}
+
+.subscribe button:hover{
+    cursor: pointer;
+}
+
+.subscribe button:active{
+    background:rgb(233, 130, 13);
+    outline-offset: 0px;
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    opacity: 0.7;
+    color: #262528;
+}
+
+#email {
+    background: rgb(252, 136, 2);
+    border:#3E3D43 solid 1px;
+    height:40px;
+    width:70%;
+    margin-right:-2.5em;
+    border-radius: 0;
+}
+
+.subscribe .input:focus{
+    border: 3px solid black;
+    box-shadow: 0 0 2px black;
+    outline-offset: 0px;
+    outline: none;
+    color:black;
+}
+
+main {
+    min-height:70vh;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        background:#1C1925; 
+    }
+    #content-img-one{
+        object-fit: cover;
+        height:420px;
+        width:100%;
+    }
+    #content-img-two {
+        object-fit: cover;
+        height:380px;
+        width:100%;
+    }
+    #email {
+        width:50%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    body{
+        background:#1C1925; 
+    }
+    #email {
+        width:40%;
+    }
+    .content h1{
+        font-size: 60px;
+    }
+    
+    .content h2{
+        font-size: 50px;
+    }
+    .logo-image{
+        width: 43px;
+        height: 43px;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+    
+    #mainNavbar .navbar-brand {
+        color: rgb(255,255,255,0.75);
+        font-size: 2rem;
+        font-family: 'Sen', sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        background:#1C1925; 
+    }
+    #email {
+        width:30%;
+    }
+
+}
+
+
