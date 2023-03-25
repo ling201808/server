@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://ling201808.github.io/server/",
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +15,10 @@
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "lodash": "^4.17.11"
+  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
